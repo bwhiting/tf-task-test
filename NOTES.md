@@ -7,6 +7,7 @@
 # Dev notes
 ## node
 - no tests included, could add
+- had some issues with package-lock file location but fixed with "cache-dependency-path" flag
 
 ## python
  - needed to update "runtime settings" in "Code" tab to reflect project setup by setting the handler to "main.handler". nb: important to "deploy" code to test these changes in situe
