@@ -3,8 +3,8 @@ on:
   push:
     branches:
     - main
-    paths:
-    - 'my_ts_service/**'
+#    paths:
+#    - 'my_ts_service/**'
 jobs:
   call-build-update:
     uses: ./.github/workflows/node-build-update.yml
