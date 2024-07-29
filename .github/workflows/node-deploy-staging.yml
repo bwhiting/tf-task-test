@@ -1,0 +1,11 @@
+name: Lambda Node Deploy Staging
+on:
+  push:
+    branches:
+    - staging
+    paths:
+    - 'my_ts_service/**'
+jobs:
+  call-build-update:
+    uses: ./.github/workflows/node-build-update.yml
+    secrets: inherit

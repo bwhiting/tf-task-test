@@ -1,0 +1,11 @@
+name: Lambda Python Deploy Production
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - 'my_python_service/**'
+jobs:
+  call-build-update:
+    uses: ./.github/workflows/python-build-update.yml
+    secrets: inherit
